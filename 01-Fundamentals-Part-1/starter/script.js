@@ -88,7 +88,6 @@ countries have multiple languages, but just choose one)
 2. Think about which variables should be const variables (which values will never 
 change, and which might change?). Then, change these variables to const.
 3. Try to change one of the changed variables now, and observe what happens
-*/
 
 const country = "India"
 const continent ="Asia"
@@ -104,7 +103,53 @@ console.log(typeof language)
 
 // Trying to change a const variable (this will throw an error)
 country = "USA"; // TypeError: Assignment to constant variable.
+*/
 
+/*
+LECTURE: Basic Operators
+1. If your country split in half, and each half would contain half the population, 
+then how many people would live in each half?
+2. Increase the population of your country by 1 and log the result to the console
+3. Finland has a population of 6 million. Does your country have more people than 
+Finland?
+4. The average population of a country is 33 million people. Does your country 
+have less people than the average country?
+5. Based on the variables you created, create a new variable 'description'
+which contains a string with this format: 'Portugal is in Europe, and its 11 million 
+people speak portuguese'
+*/
 
+const country = "India";
+const continent = "Asia";
+let population = 1428600000; // 1.43 billion
+let isIsland = false;
+let language = "Malayalam"; // Corrected spelling of 'Malayalam'
 
+const halfPopulation = population / 2;
+console.log("Population of each half: ", halfPopulation); // Question 1: Split population in half
 
+console.log("Population after increase by 1: ", population + 1); // Question 2: Increase population by 1
+
+const finland = 6000000; // Finland's population
+if (population > finland) {
+    console.log("India has a higher population than Finland."); // Question 3: Compare with Finland
+} else {
+    console.log("Finland has a higher population than India.");
+}
+
+const avg = 33000000; // Average population of a country (33 million)
+if (population > avg) {
+    console.log("India has more people than the average country."); // Question 4: Compare with average population
+} else {
+    console.log("India has fewer people than the average country.");
+}
+
+// Description based on variables (Question 5)
+const description = `${country} is in ${continent}, and its ${halfPopulation} people speak ${language}`
+console.log(description);
+
+// Log types of different variables
+console.log(typeof isIsland);    // boolean
+console.log(typeof continent);   // string
+console.log(typeof population);  // number
+console.log(typeof language);    // string

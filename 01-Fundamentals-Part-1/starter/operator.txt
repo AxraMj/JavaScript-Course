@@ -1,0 +1,13 @@
+Precedence	Operator(s)
+1	        () (Parentheses)
+2	        ++, --, +, -, ~, !, typeof, void, delete
+3	        ** (Exponentiation)
+4	        *, /, %
+5	        +, -
+6	        <<, >>, >>>
+7	        <, <=, >, >=, in, instanceof
+8	        ==, !=, ===, !==
+9	        && (Logical AND)
+10	        `
+11	        ? : (Ternary Conditional)
+12	        =, +=, -=, *=, /=, %= etc.
