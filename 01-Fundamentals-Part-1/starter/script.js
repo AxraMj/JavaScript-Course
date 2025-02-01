@@ -254,7 +254,7 @@ not, log 'Portugal does not meet your criteria :('
 5. Probably your country does not meet all the criteria. So go back and temporarily 
 change some variables in order to make the condition true (unless you live in 
 Canada :D)
-*/
+
 
 const country = prompt("Select state: India, Australia, Germany");
 let englishCountry = "Australia";
@@ -267,3 +267,5 @@ if (country == englishCountry && language === "English" && population < 50 && !i
 } else {
   console.log(`${country} does not meet your criteria :(`);
 }
+
+*/
