@@ -175,7 +175,7 @@ console: 'Portugal's population is above average'. Otherwise, log a string like
 minus the country's population)
 2. After checking the result, change the population temporarily to 13 and then to 
 130. See the different results, and set the population back to origina
-*/
+
 const country = "India";
 const continent = "Asia";
 let population = 14286; // 1.43 billion
@@ -187,6 +187,7 @@ if (population > 33000000){
 else{
   console.log(`${country}'s population is below average`)
 }
+  */
 
 
 
