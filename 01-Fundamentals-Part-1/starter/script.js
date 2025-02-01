@@ -161,8 +161,32 @@ LECTURE: Strings and Template Literals
 1. Recreate the 'description' variable from the last assignment, this time 
 using the template literal synta
 
-*/
+
 let firstName="Akshara"
 let age=20
 console.log(`My name is ${firstName} i am ${age} years old`)
+*/
+
+/*
+LECTURE: Taking Decisions: if / else Statements
+1. If your country's population is greater that 33 million, log a string like this to the 
+console: 'Portugal's population is above average'. Otherwise, log a string like 
+'Portugal's population is 22 million below average' (the 22 is the average of 33 
+minus the country's population)
+2. After checking the result, change the population temporarily to 13 and then to 
+130. See the different results, and set the population back to origina
+*/
+const country = "India";
+const continent = "Asia";
+let population = 14286; // 1.43 billion
+let isIsland = false;
+let language = "Malayalam"; // Corrected spelling of 'Malayalam'
+if (population > 33000000){
+  console.log(`${country}'s population is Above average`)
+}
+else{
+  console.log(`${country}'s population is below average`)
+}
+
+
 
