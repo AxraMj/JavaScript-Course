@@ -118,7 +118,7 @@ have less people than the average country?
 which contains a string with this format: 'Portugal is in Europe, and its 11 million 
 people speak portuguese'
 */
-
+/*
 const country = "India";
 const continent = "Asia";
 let population = 1428600000; // 1.43 billion
@@ -132,24 +132,37 @@ console.log("Population after increase by 1: ", population + 1); // Question 2: 
 
 const finland = 6000000; // Finland's population
 if (population > finland) {
-    console.log("India has a higher population than Finland."); // Question 3: Compare with Finland
+  console.log("India has a higher population than Finland."); // Question 3: Compare with Finland
 } else {
-    console.log("Finland has a higher population than India.");
+  console.log("Finland has a higher population than India.");
 }
 
 const avg = 33000000; // Average population of a country (33 million)
 if (population > avg) {
-    console.log("India has more people than the average country."); // Question 4: Compare with average population
+  console.log("India has more people than the average country."); // Question 4: Compare with average population
 } else {
-    console.log("India has fewer people than the average country.");
+  console.log("India has fewer people than the average country.");
 }
 
 // Description based on variables (Question 5)
-const description = `${country} is in ${continent}, and its ${halfPopulation} people speak ${language}`
+const description = `${country} is in ${continent}, and its ${halfPopulation} people speak ${language}`;
 console.log(description);
 
 // Log types of different variables
-console.log(typeof isIsland);    // boolean
-console.log(typeof continent);   // string
-console.log(typeof population);  // number
-console.log(typeof language);    // string
+console.log(typeof isIsland); // boolean
+console.log(typeof continent); // string
+console.log(typeof population); // number
+console.log(typeof language); // string
+
+*/
+
+/*
+LECTURE: Strings and Template Literals
+1. Recreate the 'description' variable from the last assignment, this time 
+using the template literal synta
+
+*/
+let firstName="Akshara"
+let age=20
+console.log(`My name is ${firstName} i am ${age} years old`)
+

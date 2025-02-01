@@ -19,18 +19,16 @@ m tall.
 GOOD LUCK �
 */
 
-const markMass=78
-const markHeight=1.69
+const markMass = 78;
+const markHeight = 1.69;
 
-const johnMass=92
-const johnHeight=1.95
+const johnMass = 92;
+const johnHeight = 1.95;
 
+const markBMI = markMass / markHeight ** 2;
+const johnBMI = johnMass / johnHeight ** 2;
 
-const markBMI = markMass / (markHeight ** 2); 
-const johnBMI = johnMass / (johnHeight ** 2);
-
-markHigherBMI=markBMI>johnBMI
-console.log(typeof markHigherBMI)
+markHigherBMI = markBMI > johnBMI;
+console.log(typeof markHigherBMI);
 console.log(markBMI, johnBMI); // Print the BMI values
-console.log("markHigherBMI: "+markHigherBMI)
-
+console.log("markHigherBMI: " + markHigherBMI);
