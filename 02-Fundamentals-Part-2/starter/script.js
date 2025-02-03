@@ -133,7 +133,7 @@ console: 'Probably not a central European country :D'
 index of the country in the 'neighbours' array, and then use that index to 
 change the array at that index position. For example, you can search for
 'Sweden' in the array, and then replace it with 'Republic of Sweden'.
-*/
+
 const neighbours = ["France", "Germany", "Italy"]; // Neighbours of Switzerland
 neighbours.push("Utopia")
 console.log("After Added Utopia: "+neighbours)
@@ -149,3 +149,5 @@ else{
 
 neighbours[neighbours.indexOf('France')]='Republic of France'
 console.log(neighbours)
+
+*/
