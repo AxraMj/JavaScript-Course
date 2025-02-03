@@ -38,6 +38,10 @@ store the results into variables, and log them to the console
 4. Create a function expression which does the exact same thing, called 
 'percentageOfWorld2', and also call it with 3 country populations (can be 
 the same populations)
+
+LECTURE: Arrow Functions
+1. Recreate the last assignment, but this time create an arrow function called 
+'percentageOfWorld3
 */
 // Function Declarations
 function percentageOfWorld1(country,population){
@@ -55,6 +59,15 @@ const percentageOfWorld2=function (country,population){
 }
 
 console.log(percentageOfWorld1('india',1000))
+console.log(percentageOfWorld1('USA', 331));
+console.log(percentageOfWorld1('China', 1441));
+
+//Arrow Function
+const percentageOfWorld3=(country,population)=>{
+    const percentageCalcuation=((population/7900) *100).toFixed(2)
+    return `${country} has ${population} million people, so it's about ${percentageCalcuation}% of the world population`
+}
+console.log(percentageOfWorld1('india',1000));
 console.log(percentageOfWorld1('USA', 331));
 console.log(percentageOfWorld1('China', 1441));
 
