@@ -17,7 +17,9 @@ returned values in 3 different variables, and log them to the console
 */
 
 function describeCountry(country,population,capitalCity){
-    console.log(`${country} has ${population} million people and its capital city is ${capitalCity}`)
+    return `${country} has ${population} million people and its capital city is ${capitalCity}`
 }
-describeCountry('india',6,'New Delhi')
+console.log(describeCountry('india',6,'New Delhi'))
+console.log(describeCountry('Ausralia',5,'Canberra'))
+console.log(describeCountry('Germany',7,'Berlin'))
 
