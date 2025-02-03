@@ -103,7 +103,7 @@ variable called 'populations'
 world population for these 4 population values. Use the function 
 'percentageOfWorld1' that you created earlier to compute the 4 
 percentage value
-*/
+
 const populations=[2000, 3000, 4000, 5000];
 console.log(populations.length==4)
 const percentageOfWorld3=(population)=>{
@@ -117,3 +117,4 @@ const percentages=[
 ]
 
 console.log(percentages)
+*/
