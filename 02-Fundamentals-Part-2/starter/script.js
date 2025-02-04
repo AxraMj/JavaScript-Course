@@ -253,10 +253,36 @@ LECTURE: Looping Backwards and Loops in Loops
 arrays. Log a string like 'Neighbour: Canada' for each country
 3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't 
 worry if it's too difficult for you! But you can still try to figure this out anyway �
-*/
+
 const listOfNeighbours=[['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 
     'Russia']]
 
 for (let i=0;i<listOfNeighbours.length;i++)
     for(let j=0;j<listOfNeighbours[i].length;j++)
         console.log(`Neighbour:${listOfNeighbours[i][j]}`)
+*/
+/*
+LECTURE: The while Loop
+1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing', 
+but this time using a while loop (call the array 'percentages3')
+2. Reflect on what solution you like better for this task: the for loop or the while
+loop
+*/
+
+const populations=[2000, 3000, 4000, 5000];
+
+const percentageOfWorld2=function (country,population){
+    const percentageCalcuation=((population/7900) *100).toFixed(2)
+    return `${country} has ${population} million people, so it's about ${percentageCalcuation}% of the world population`
+}
+
+const percentages2=[]
+let i=1
+while(i<=populations.length){
+    const perc=percentageOfWorld2(populations[i])
+    percentages2.push(perc)
+    i++
+}
+
+console.log(percentages2)
+
