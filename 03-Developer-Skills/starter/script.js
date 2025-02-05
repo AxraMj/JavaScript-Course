@@ -36,3 +36,30 @@ const calTemperature = (temp) => {
 };
 
 calTemperature(temperatures);
+
+// PROBLEM 2:
+// Function should now receive 2 arrays of temps
+
+// 1) Understanding the problem
+// - With 2 arrays, should we implement functionality twice? NO! Just merge two arrays
+
+// 2) Breaking up into sub-problems
+// - Merge 2 arrays
+
+const calTwoTemperature = (t1, t2) => {
+  let concatArray = t1.concat(t2);
+  let max = concatArray[0];
+  let min = concatArray[0];
+  for (let i = 0; i <= concatArray.length; i++) {
+    let currTemp = concatArray[i];
+
+    if (typeof currTemp !== "number") continue;
+    if (currTemp > max) max = currTemp;
+    if (currTemp < min) min = currTemp;
+  }
+  console.log(max, min);
+  let diff = max - min;
+  console.log(`difference is: ${diff}`);
+};
+
+calTwoTemperature([10, 2, 20], [9, 0, 5]);
