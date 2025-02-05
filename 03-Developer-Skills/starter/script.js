@@ -5,8 +5,6 @@
 // "Given an array of temperatures of one day, calculate the temperature amplitude.
 // Keep in mind that sometimes there might be a sensor error."
 
-const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
-
 // 1) Understanding the problem
 // -- What is temperature amplitude?
 // Answer: the difference between the highest and lowest temperatures recorded over a period of time.
@@ -21,11 +19,20 @@ const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
 // -- Find diff from min and max and return it
 
 //Solution
-const calcTempAmplitude = (temperatures) => {
-  for (i = 0; i <= temperatures.length; i++) {
-    for (j=i+1;j<=temperatures.length;j++){
-        if (temperatures[i]>temperatures)
-    }
-   
+const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+const calTemperature = (temp) => {
+  let max = temp[0];
+  let min = temp[0];
+  for (let i = 0; i <= temp.length; i++) {
+    let currTemp = temp[i];
+
+    if (typeof currTemp !== "number") continue;
+    if (currTemp > max) max = currTemp;
+    if (currTemp < min) min = currTemp;
   }
+  console.log(max, min);
+  let diff = max - min;
+  console.log(`difference is: ${diff}`);
 };
+
+calTemperature(temperatures);
