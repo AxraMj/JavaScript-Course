@@ -269,20 +269,19 @@ but this time using a while loop (call the array 'percentages3')
 loop
 */
 
-const populations=[2000, 3000, 4000, 5000];
+const populations = [2000, 3000, 4000, 5000];
 
-const percentageOfWorld2=function (country,population){
-    const percentageCalcuation=((population/7900) *100).toFixed(2)
-    return `${country} has ${population} million people, so it's about ${percentageCalcuation}% of the world population`
+const percentageOfWorld2 = function (country, population) {
+  const percentageCalcuation = ((population / 7900) * 100).toFixed(2);
+  return `${country} has ${population} million people, so it's about ${percentageCalcuation}% of the world population`;
+};
+
+const percentages2 = [];
+let i = 1;
+while (i <= populations.length) {
+  const perc = percentageOfWorld2(populations[i]);
+  percentages2.push(perc);
+  i++;
 }
 
-const percentages2=[]
-let i=1
-while(i<=populations.length){
-    const perc=percentageOfWorld2(populations[i])
-    percentages2.push(perc)
-    i++
-}
-
-console.log(percentages2)
-
+console.log(percentages2);
