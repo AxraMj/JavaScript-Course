@@ -57,7 +57,6 @@ document.querySelector('.check').addEventListener('click', function () {
 //Maipulating css style
 const secretNumber = Math.floor(Math.random() * 20) + 1;
 let score = 20;
-document.querySelector('.number').textContent = secretNumber;
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
@@ -69,8 +68,9 @@ document.querySelector('.check').addEventListener('click', function () {
 
   //When correct Guess
   else if (guess == secretNumber) {
-    document.querySelector('.message').textContent = 'Currect Guess!!';
+    document.querySelector('.message').textContent = 'Correct Guess!!';
     document.querySelector('body').style.backgroundColor = 'green';
+    document.querySelector('.number').textContent = secretNumber;
   }
 
   //When Guess is higher
