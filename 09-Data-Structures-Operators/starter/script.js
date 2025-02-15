@@ -77,4 +77,12 @@ console.log(o, c);
 const arr = [8, 9, 10];
 const newArray = [1, 2, ...arr];
 console.log(newArray);
-console.log(...newArray);
+console.log(...newArray); //1 2 8 9 10
+
+//Rest Parameter (... in function parameters)
+const greet = (i, j, ...others) => {
+  console.log(`hello ${i} and ${j}`);
+  console.log(others);
+};
+
+greet('aks', 'avi', 'joh', 'alla');
