@@ -72,3 +72,9 @@ const {
   fri: { open: o, close: c },
 } = openingHours;
 console.log(o, c);
+
+//spread operator
+const arr = [8, 9, 10];
+const newArray = [1, 2, ...arr];
+console.log(newArray);
+console.log(...newArray);
