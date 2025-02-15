@@ -113,3 +113,14 @@ console.log(firstName); //Akshara
 
 const secondName = 'Avin' ?? 'Akshara';
 console.log(secondName); //Avin, because name is not null
+
+// Logical Assignment Operators in JavaScript (&&=, ||=, ??=)
+let name = '';
+name ||= 'Guest';
+console.log(name); // Output: "Guest" (because "" is falsy)
+
+let username = 'Alice';
+username ||= 'Guest';
+console.log(username); // Output: "Alice" (unchanged, since it's truthy)
+
+//AND Assignment (&&=)
