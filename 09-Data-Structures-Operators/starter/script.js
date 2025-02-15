@@ -91,3 +91,11 @@ greet('aks', 'avi', 'joh', 'alla');
 const [first, second, ...others] = [1, 2, 3, 4, 5];
 console.log(first);
 console.log(others);
+
+// OR (||) Short-Circuiting
+console.log(3 || 'john');
+console.log(0 || false || 'Hello' || 42);
+// Output: "Hello" (First truthy value)
+
+console.log('' || null || undefined || 0);
+// Output: 0 (All are falsy, so returns the last one)
