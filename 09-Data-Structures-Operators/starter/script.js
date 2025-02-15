@@ -115,12 +115,19 @@ const secondName = 'Avin' ?? 'Akshara';
 console.log(secondName); //Avin, because name is not null
 
 // Logical Assignment Operators in JavaScript (&&=, ||=, ??=)
-let name = '';
+let nameIs = '';
 name ||= 'Guest';
-console.log(name); // Output: "Guest" (because "" is falsy)
+console.log(nameIs); // Output: "Guest" (because "" is falsy)
 
 let username = 'Alice';
 username ||= 'Guest';
 console.log(username); // Output: "Alice" (unchanged, since it's truthy)
 
 //AND Assignment (&&=)
+let isLoggedIn = true;
+isLoggedIn &&= 'User is active';
+console.log(isLoggedIn); // Output: "User is active"
+
+let isOnline = false;
+isOnline &&= 'Connected';
+console.log(isOnline); // Output: false (unchanged, since it's falsy)
