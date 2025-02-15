@@ -99,3 +99,10 @@ console.log(0 || false || 'Hello' || 42);
 
 console.log('' || null || undefined || 0);
 // Output: 0 (All are falsy, so returns the last one)
+
+//2️⃣ AND (&&) Short-Circuiting
+console.log(10 && 'Hello' && null && 'World');
+// Output: null (First falsy value)
+
+console.log(5 && true && 'JavaScript');
+// Output: "JavaScript" (All truthy, so returns the last one)
