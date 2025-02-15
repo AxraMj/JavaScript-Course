@@ -86,3 +86,8 @@ const greet = (i, j, ...others) => {
 };
 
 greet('aks', 'avi', 'joh', 'alla');
+
+// Rest Pattern (... in Destructuring)
+const [first, second, ...others] = [1, 2, 3, 4, 5];
+console.log(first);
+console.log(others);
