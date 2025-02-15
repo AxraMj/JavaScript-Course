@@ -106,3 +106,10 @@ console.log(10 && 'Hello' && null && 'World');
 
 console.log(5 && true && 'JavaScript');
 // Output: "JavaScript" (All truthy, so returns the last one)
+
+// Nullish Coalescing Operator (??) in JavaScript
+const firstName = null ?? 'Akshara';
+console.log(firstName); //Akshara
+
+const secondName = 'Avin' ?? 'Akshara';
+console.log(secondName); //Avin, because name is not null
