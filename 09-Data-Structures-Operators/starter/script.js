@@ -47,3 +47,14 @@ const restaurant = {
 };
 const [i, , j] = restaurant.categories;
 console.log(i, j);
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
+
+const {
+  name: resturentName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+console.log(resturentName, hours, tags);
+
+const { menu = [], starterMenu: starters = [] } = restaurant;
