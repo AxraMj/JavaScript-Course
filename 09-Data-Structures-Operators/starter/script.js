@@ -45,3 +45,5 @@ const restaurant = {
     },
   },
 };
+const [i, , j] = restaurant.categories;
+console.log(i, j);
