@@ -67,3 +67,13 @@ const game = {
 game.scored.forEach((player, index) =>
   console.log(`Goal ${index + 1}: ${player}`)
 );
+
+const odds = Object.values(game.odds);
+let sum = 0;
+
+odds.forEach(odd => {
+  sum += odd; // Add each odd to the sum
+});
+
+const averageOdd = sum / odds.length;
+console.log(`Average Odd: ${averageOdd.toFixed(2)}`);
