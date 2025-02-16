@@ -131,3 +131,17 @@ console.log(isLoggedIn); // Output: "User is active"
 let isOnline = false;
 isOnline &&= 'Connected';
 console.log(isOnline); // Output: false (unchanged, since it's falsy)
+
+//optional cahning(?.)
+const user = {
+  name: 'alice',
+  address: {
+    city: 'new york',
+  },
+};
+
+console.log(user?.address?.city);
+console.log(user?.address?.contact);
+
+const keys = Object.keys(user);
+console.log(keys);
