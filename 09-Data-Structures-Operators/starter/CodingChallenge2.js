@@ -77,3 +77,15 @@ odds.forEach(odd => {
 
 const averageOdd = sum / odds.length;
 console.log(`Average Odd: ${averageOdd.toFixed(2)}`);
+
+console.log(`Odd of victory ${game.team1}: ${odds.team1}`);
+console.log(`Odd of draw: ${odds.x}`);
+console.log(`Odd of victory ${game.team2}: ${odds.team2}`);
+
+const scorers = {};
+
+game.scored.forEach(player => {
+  scorers[player] = (scorers[player] || 0) + 1;
+});
+
+console.log(scorers);
