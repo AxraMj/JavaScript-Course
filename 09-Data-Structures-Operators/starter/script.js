@@ -145,3 +145,9 @@ console.log(user?.address?.contact);
 
 const keys = Object.keys(user);
 console.log(keys);
+
+const value = Object.values(user);
+console.log(value);
+
+const entry = Object.entries(user);
+console.log(entry);
